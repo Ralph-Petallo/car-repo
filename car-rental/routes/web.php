@@ -1,11 +1,9 @@
 <?php
 
-use App\Http\Controllers\sampleController;
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('practice');
-});
+Route::get('/', [AdminController::class, 'index'])->name('index');
+Route::get('cars', [AdminController::class, 'cars'])->name('cars');
+Route::get('services', [AdminController::class, 'service'])->name('services');
 
-
-Route::get('request', [sampleController::class,'request'])->name('request');
