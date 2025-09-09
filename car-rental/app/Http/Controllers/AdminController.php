@@ -17,4 +17,16 @@ class AdminController extends Controller
     public function service(){
         return view("services");
     }
+
+    public function abouts(){
+        return view("about");
+    }
+
+    public function contacts(){
+        return view("contact");
+    }
+
+    public function blogs(){    
+        return view("blog");
+    }
 }

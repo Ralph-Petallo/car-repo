@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 
-@include('styles');
+  @include('styles');
 
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
@@ -39,12 +39,12 @@
 
               <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
                 <ul class="site-menu main-menu js-clone-nav ml-auto ">
-                  <li><a href="{{route('index')}}" class="nav-link">Home</a></li>
-                  <li class="active"><a href="#" class="nav-link">Services</a></li>
-                  <li><a href="{{ route('cars') }}" class="nav-link">Cars</a></li>
-                  <li><a href="{{ route('about') }}" class="nav-link">About</a></li>
+                  <li><a href="{{ route('index') }}" class="nav-link">Home</a></li>
+                  <li><a href="{{ route('services') }}" class="nav-link">Services</a></li>
+                  <li><a href="{{route('cars')}}" class="nav-link">Cars</a></li>
+                  <li><a href="{{route('about')}}" class="nav-link">About</a></li>
                   <li><a href="{{ route('blog') }}" class="nav-link">Blog</a></li>
-                  <li><a href="{{ route('contact') }}" class="nav-link">Contact</a></li>
+                  <li class="active"><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
               </nav>
             </div>
@@ -56,11 +56,11 @@
       </header>
 
     <div class="ftco-blocks-cover-1">
-      <div class="ftco-cover-1 overlay innerpage" style="background-image: url('images/hero_2.jpg')">
+      <div class="ftco-cover-1 overlay innerpage" style="background-image: url('{{asset('carrent-master\carrent-master\images\hero_2.jpg')}}">
         <div class="container">
           <div class="row align-items-center justify-content-center">
             <div class="col-lg-6 text-center">
-              <h1>Our Services</h1>
+              <h1>Contact Us</h1>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
           </div>
@@ -68,110 +68,60 @@
       </div>
     </div>
 
-    <div class="site-section">
+    <div class="site-section bg-light" id="contact-section">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-4 mb-4 mb-lg-5">
-            <div class="service-1 dark">
-              <span class="service-1-icon">
-                <span class="flaticon-car"></span>
-              </span>
-              <div class="service-1-contents">
-                <h3>Car Key</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 mb-4 mb-lg-5">
-            <div class="service-1 dark">
-              <span class="service-1-icon">
-                <span class="flaticon-valet-1"></span>
-              </span>
-              <div class="service-1-contents">
-                <h3>Car Key</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 mb-4 mb-lg-5">
-            <div class="service-1 dark">
-              <span class="service-1-icon">
-                <span class="flaticon-key"></span>
-              </span>
-              <div class="service-1-contents">
-                <h3>Car Key</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 mb-4 mb-lg-5">
-            <div class="service-1 dark">
-              <span class="service-1-icon">
-                <span class="flaticon-car-1"></span>
-              </span>
-              <div class="service-1-contents">
-                <h3>Repair</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 mb-4 mb-lg-5">
-            <div class="service-1 dark">
-              <span class="service-1-icon">
-                <span class="flaticon-traffic"></span>
-              </span>
-              <div class="service-1-contents">
-                <h3>Car Accessories</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 mb-4 mb-lg-5">
-            <div class="service-1 dark">
-              <span class="service-1-icon">
-                <span class="flaticon-valet"></span>
-              </span>
-              <div class="service-1-contents">
-                <h3>Own a Car</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container site-section mb-5">
-      <div class="row justify-content-center text-center">
+        <div class="row justify-content-center text-center">
         <div class="col-7 text-center mb-5">
-          <h2>How it works</h2>
+          <h2>Contact Us Or Use This Form To Rent A Car</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo assumenda, dolorum necessitatibus eius earum voluptates sed!</p>
         </div>
       </div>
-      <div class="how-it-works d-flex">
-        <div class="step">
-          <span class="number"><span>01</span></span>
-          <span class="caption">Time &amp; Place</span>
-        </div>
-        <div class="step">
-          <span class="number"><span>02</span></span>
-          <span class="caption">Car</span>
-        </div>
-        <div class="step">
-          <span class="number"><span>03</span></span>
-          <span class="caption">Details</span>
-        </div>
-        <div class="step">
-          <span class="number"><span>04</span></span>
-          <span class="caption">Checkout</span>
-        </div>
-        <div class="step">
-          <span class="number"><span>05</span></span>
-          <span class="caption">Done</span>
-        </div>
+        <div class="row">
+          <div class="col-lg-8 mb-5" >
+            <form action="#" method="post">
+              <div class="form-group row">
+                <div class="col-md-6 mb-4 mb-lg-0">
+                  <input type="text" class="form-control" placeholder="First name">
+                </div>
+                <div class="col-md-6">
+                  <input type="text" class="form-control" placeholder="First name">
+                </div>
+              </div>
 
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <input type="text" class="form-control" placeholder="Email address">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <textarea name="" id="" class="form-control" placeholder="Write your message." cols="30" rows="10"></textarea>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-6 mr-auto">
+                  <input type="submit" class="btn btn-block btn-primary text-white py-3 px-5" value="Send Message">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-4 ml-auto">
+            <div class="bg-white p-3 p-md-5">
+              <h3 class="text-black mb-4">Contact Info</h3>
+              <ul class="list-unstyled footer-link">
+                <li class="d-block mb-3">
+                  <span class="d-block text-black">Address:</span>
+                  <span>34 Street Name, City Name Here, United States</span></li>
+                <li class="d-block mb-3"><span class="d-block text-black">Phone:</span><span>+1 242 4942 290</span></li>
+                <li class="d-block mb-3"><span class="d-block text-black">Email:</span><span>info@yourdomain.com</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
 
     
 
