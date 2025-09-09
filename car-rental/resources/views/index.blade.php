@@ -39,12 +39,12 @@
 
               <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
                 <ul class="site-menu main-menu js-clone-nav ml-auto ">
-                  <li class="active"><a href="index.html" class="nav-link">Home</a></li>
-                  <li><a href="{{ route('services') }}" class="nav-link">Services</a></li>
+                  <li class="active"><a href="#" class="nav-link">Home</a></li>
+                  <li><a href="{{ route('services')}}" class="nav-link">Services</a></li>
                   <li><a href="{{route('cars')}}" class="nav-link">Cars</a></li>
-                  <li><a href="about.html" class="nav-link">About</a></li>
-                  <li><a href="blog.html" class="nav-link">Blog</a></li>
-                  <li><a href="contact.html" class="nav-link">Contact</a></li>
+                  <li><a href="{{ route('about') }}" class="nav-link">About</a></li>
+                  <li><a href="{{ route('blog') }}" class="nav-link">Blog</a></li>
+                  <li><a href="{{ route('contact') }}" class="nav-link">Contact</a></li>
                 </ul>
               </nav>
             </div>
@@ -56,7 +56,11 @@
       </header>
 
     <div class="ftco-blocks-cover-1">
+<<<<<<< HEAD
       <div class="ftco-cover-1 overlay" style="background-image: url('{{ asset('carrent-master/images/hero_1.jpg') }}')">
+=======
+      <div class="ftco-cover-1 overlay" style="background-image: url('{{asset('carrent-master/carrent-master/images/hero_1.jpg')}}')">
+>>>>>>> b223308009a8d13dfd57faabc59ad66de2925424
         <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-5">
@@ -159,6 +163,7 @@
 
             <div class="nonloop-block-13 owl-carousel">
               <div class="item-1">
+                
                 <a href="#"><img src="{{ asset('carrent-master/images/img_1.jpg') }}" alt="Image" class="img-fluid"></a>
                 <div class="item-1-contents">
                   <div class="text-center">
