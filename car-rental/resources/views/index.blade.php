@@ -33,7 +33,7 @@
             <div class="col-9  text-right">
               
 
-              <span class="d-inline-block d-lg-none"><a href="#" class="text-white site-menu-toggle js-menu-toggle py-5 text-white"><span class="icon-menu h3 text-white"></span></a></span>
+              <span class="d-inline-block d-lg-none"><a href="#" class="text-white site-menu-toggle js-menu-toggle py-5"><span class="icon-menu h3 text-white"></span></a></span>
 
               
 
@@ -56,7 +56,7 @@
       </header>
 
     <div class="ftco-blocks-cover-1">
-      <div class="ftco-cover-1 overlay" style="background-image: url('images/hero_1.jpg')">
+      <div class="ftco-cover-1 overlay" style="background-image: url('{{ asset('carrent-master/images/hero_1.jpg') }}')">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-5">
@@ -159,7 +159,7 @@
 
             <div class="nonloop-block-13 owl-carousel">
               <div class="item-1">
-                <a href="#"><img src="images/img_1.jpg" alt="Image" class="img-fluid"></a>
+                <a href="#"><img src="{{ asset('carrent-master/images/img_1.jpg') }}" alt="Image" class="img-fluid"></a>
                 <div class="item-1-contents">
                   <div class="text-center">
                   <h3><a href="#">Range Rover S64 Coupe</a></h3>
@@ -198,7 +198,7 @@
 
 
               <div class="item-1">
-                <a href="#"><img src="images/img_2.jpg" alt="Image" class="img-fluid"></a>
+                <a href="#"><img src="{{ asset('carrent-master/images/img_2.jpg') }}" alt="Image" class="img-fluid"></a>
                 <div class="item-1-contents">
                   <div class="text-center">
                   <h3><a href="#">Range Rover S64 Coupe</a></h3>
@@ -242,7 +242,7 @@
       </div>
     </div>
 
-    <div class="site-section section-3" style="background-image: url('images/hero_2.jpg');">
+    <div class="site-section section-3" style="background-image: url('{{ asset('carrent-master/images/hero_2.jpg') }}')">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center mb-5">
@@ -336,7 +336,7 @@
                 <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"</p>
               </blockquote>
               <div class="d-flex v-card align-items-center">
-                <img src="images/person_1.jpg" alt="Image" class="img-fluid mr-3">
+                <img src="{{ asset('carrent-master/images/person_1.jpg') }}" alt="Image" class="img-fluid mr-3">
                 <span>Mike Fisher</span>
               </div>
             </div>
@@ -347,7 +347,7 @@
                 <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"</p>
               </blockquote>
               <div class="d-flex v-card align-items-center">
-                <img src="images/person_2.jpg" alt="Image" class="img-fluid mr-3">
+                <img src="{{ asset('carrent-master/images/person_2.jpg') }}" alt="Image" class="img-fluid mr-3">
                 <span>Jean Stanley</span>
               </div>
             </div>
@@ -358,7 +358,7 @@
                 <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"</p>
               </blockquote>
               <div class="d-flex v-card align-items-center">
-                <img src="images/person_3.jpg" alt="Image" class="img-fluid mr-3">
+                <img src="{{ asset('carrent-master/images/person_3.jpg') }}" alt="Image" class="img-fluid mr-3">
                 <span>Katie Rose</span>
               </div>
             </div>
@@ -381,7 +381,7 @@
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="post-entry-1 h-100">
               <a href="single.html">
-                <img src="images/post_1.jpg" alt="Image"
+                <img src="{{ asset('carrent-master/images/post_1.jpg') }}" alt="Image"
                  class="img-fluid">
               </a>
               <div class="post-entry-1-contents">
@@ -395,7 +395,7 @@
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="post-entry-1 h-100">
               <a href="single.html">
-                <img src="images/img_2.jpg" alt="Image"
+                <img src="{{ asset('carrent-master/images/img_2.jpg') }}" alt="Image"
                  class="img-fluid">
               </a>
               <div class="post-entry-1-contents">
@@ -410,7 +410,7 @@
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="post-entry-1 h-100">
               <a href="single.html">
-                <img src="images/img_3.jpg" alt="Image"
+                <img src="{{ asset('carrent-master/images/img_3.jpg') }}" alt="Image"
                  class="img-fluid">
               </a>
               <div class="post-entry-1-contents">

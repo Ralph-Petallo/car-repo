@@ -5,17 +5,17 @@
 
     <link href="https://fonts.googleapis.com/css?family=DM+Sans:300,400,700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="{{ asset('fonts/icomoon/style.css')}}">
+    <link rel="stylesheet" href="{{ asset('carrent-master/fonts/icomoon/style.css')}}">
 
-    <link rel="stylesheet" href="{{ asset('carrent-master\carrent-master\css\bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('carrent-master\carrent-master\bootstrap-datepicker.css')}}">
-    <link rel="stylesheet" href="{{ asset('carrent-master\carrent-master\css/jquery.fancybox.min.css')}}">
-    <link rel="stylesheet" href="{{ asset('carrent-master\carrent-master\css/owl.carousel.min.css')}}">
-    <link rel="stylesheet" href="{{ asset('carrent-master\carrent-master\css/owl.theme.default.min.css')}}">
-    <link rel="stylesheet" href="{{ asset('carrent-master\carrent-master\fonts/flaticon/font/flaticon.css')}}">
-    <link rel="stylesheet" href="{{ asset('carrent-master\carrent-master\css/aos.css')}}">
+    <link rel="stylesheet" href="{{ asset('carrent-master/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('carrent-master/css/bootstrap-datepicker.css')}}">
+    <link rel="stylesheet" href="{{ asset('carrent-master/css/jquery.fancybox.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('carrent-master/css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('carrent-master/css/owl.theme.default.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('carrent-master/fonts/flaticon/font/flaticon.css')}}">
+    <link rel="stylesheet" href="{{ asset('carrent-master/css/aos.css')}}">
 
     <!-- MAIN CSS -->
-    <link rel="stylesheet" href="{{ asset('carrent-master\carrent-master\css/style.css')}}">
+    <link rel="stylesheet" href="{{ asset('carrent-master/css/style.css')}}">
 
   </head>
