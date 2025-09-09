@@ -33,7 +33,7 @@
             <div class="col-9  text-right">
               
 
-              <span class="d-inline-block d-lg-none"><a href="#" class="text-white site-menu-toggle js-menu-toggle py-5 text-white"><span class="icon-menu h3 text-white"></span></a></span>
+              <span class="d-inline-block d-lg-none"><a href="#" class="text-white site-menu-toggle js-menu-toggle py-5"><span class="icon-menu h3 text-white"></span></a></span>
 
               
 
@@ -56,7 +56,7 @@
       </header>
 
     <div class="ftco-blocks-cover-1">
-      <div class="ftco-cover-1 overlay innerpage" style="background-image: url('{{asset('carrent-master\carrent-master\images\hero_2.jpg')}}">
+      <div class="ftco-cover-1 overlay innerpage" style="background-image: url('{{asset('carrent-master/images/hero_2.jpg')}}">
         <div class="container">
           <div class="row align-items-center justify-content-center">
             <div class="col-lg-6 text-center">

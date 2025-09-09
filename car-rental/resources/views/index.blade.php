@@ -56,11 +56,7 @@
       </header>
 
     <div class="ftco-blocks-cover-1">
-<<<<<<< HEAD
       <div class="ftco-cover-1 overlay" style="background-image: url('{{ asset('carrent-master/images/hero_1.jpg') }}')">
-=======
-      <div class="ftco-cover-1 overlay" style="background-image: url('{{asset('carrent-master/carrent-master/images/hero_1.jpg')}}')">
->>>>>>> b223308009a8d13dfd57faabc59ad66de2925424
         <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-5">
@@ -163,7 +159,7 @@
 
             <div class="nonloop-block-13 owl-carousel">
               <div class="item-1">
-                
+
                 <a href="#"><img src="{{ asset('carrent-master/images/img_1.jpg') }}" alt="Image" class="img-fluid"></a>
                 <div class="item-1-contents">
                   <div class="text-center">
