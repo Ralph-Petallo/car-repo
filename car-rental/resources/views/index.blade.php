@@ -1,94 +1,101 @@
 <!doctype html>
 <html lang="en">
 
-  @include('styles');
+@include('styles');
 
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
-    
-    <div class="site-wrap" id="home-section">
 
-      <div class="site-mobile-menu site-navbar-target">
-        <div class="site-mobile-menu-header">
-          <div class="site-mobile-menu-close mt-3">
-            <span class="icon-close2 js-menu-toggle"></span>
-          </div>
+  <div class="site-wrap" id="home-section">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
         </div>
-        <div class="site-mobile-menu-body"></div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <header class="site-navbar w-100 site-navbar-target" role="banner">
+
+      <div class="container">
+        <div class="row align-items-center position-relative">
+
+          <div class="col-3 ">
+            <div class="site-logo">
+              <a href="{{ route('index') }}">CarRent</a>
+            </div>
+          </div>
+
+          <div class="col-9  text-right">
+
+            <span class="d-inline-block d-lg-none"><a href="#"
+                class="text-white site-menu-toggle js-menu-toggle py-5"><span
+                  class="icon-menu h3 text-white"></span></a></span>
+
+            <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
+              <ul class="site-menu main-menu js-clone-nav ml-auto ">
+                <li class="active"><a href="#" class="nav-link">Home</a></li>
+                <li><a href="#service-section" class="nav-link">Services</a></li>
+                <li><a href="{{route('cars')}}" class="nav-link">Cars</a></li>
+                <li><a href="{{ route('contact') }}" class="nav-link">Contact</a></li>
+                <li><a href="#blog-section" class="nav-link">Blog</a></li>
+                <!-- Trigger the modal with a button -->
+                <li><button class="btn bg-primary" data-toggle="modal" data-target="#myModal">
+                    Log In
+                  </button>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+        </div>
       </div>
 
 
+      <!-- Modal -->
+      <div id="myModal" style="padding-right: 0px;" class="modal fade" role="dialog">
+        <div class="modal-dialog">
 
-      <header class="site-navbar site-navbar-target" role="banner">
-
-        <div class="container">
-          <div class="row align-items-center position-relative">
-
-            <div class="col-3 ">
-              <div class="site-logo">
-                <a href="index.html">CarRent</a>
-              </div>
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Login Account</h4>
             </div>
+            <div class="modal-body">
+              <form action="{{ 'login' }}">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp"
+                    placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                    else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
 
-            <div class="col-9  text-right">
-              
 
-              <span class="d-inline-block d-lg-none"><a href="#" class="text-white site-menu-toggle js-menu-toggle py-5"><span class="icon-menu h3 text-white"></span></a></span>
-
-              
-
-              <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
-                <ul class="site-menu main-menu js-clone-nav ml-auto ">
-                  <li class="active"><a href="#" class="nav-link">Home</a></li>
-                  <li><a href="{{ route('services')}}" class="nav-link">Services</a></li>
-                  <li><a href="{{route('cars')}}" class="nav-link">Cars</a></li>
-                  <li><a href="{{ route('about') }}" class="nav-link">About</a></li>
-                  <li><a href="{{ route('blog') }}" class="nav-link">Blog</a></li>
-                  <li><a href="{{ route('contact') }}" class="nav-link">Contact</a></li>
-                </ul>
-              </nav>
             </div>
-
-            
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
           </div>
-        </div>
 
-      </header>
+        </div>
+      </div>
+    </header>
 
     <div class="ftco-blocks-cover-1">
-      <div class="ftco-cover-1 overlay" style="background-image: url('{{ asset('carrent-master/images/hero_1.jpg') }}')">
+      <div class="ftco-cover-1 overlay"
+        style="background-image: url('{{ asset('carrent-master/images/hero_1.jpg') }}')">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-5">
-              <div class="feature-car-rent-box-1">
-                <h3>Range Rover S7</h3>
-                <ul class="list-unstyled">
-                  <li>
-                    <span>Doors</span>
-                    <span class="spec">4</span>
-                  </li>
-                  <li>
-                    <span>Seats</span>
-                    <span class="spec">6</span>
-                  </li>
-                  <li>
-                    <span>Lugage</span>
-                    <span class="spec">2 Suitcase/2 Bags</span>
-                  </li>
-                  <li>
-                    <span>Transmission</span>
-                    <span class="spec">Automatic</span>
-                  </li>
-                  <li>
-                    <span>Minium age</span>
-                    <span class="spec">Automatic</span>
-                  </li>
-                </ul>
-                <div class="d-flex align-items-center bg-light p-3">
-                  <span>$150/day</span>
-                  <a href="contact.html" class="ml-auto btn btn-primary">Rent Now</a>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -99,53 +106,54 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            
-              <form class="trip-form">
-                <div class="row align-items-center mb-4">
-                  <div class="col-md-6">
-                    <h3 class="m-0">Begin your trip here</h3>
-                  </div>
-                  <div class="col-md-6 text-md-right">
-                    <span class="text-primary">32</span> <span>cars available</span></span>
-                  </div>
+
+            <form class="trip-form">
+              <div class="row align-items-center mb-4">
+                <div class="col-md-6">
+                  <h3 class="m-0">Begin your trip here</h3>
                 </div>
-                <div class="row">
-                  <div class="form-group col-md-3">
-                    <label for="cf-1">Where you from</label>
-                    <input type="text" id="cf-1" placeholder="Your pickup address" class="form-control">
-                  </div>
-                  <div class="form-group col-md-3">
-                    <label for="cf-2">Where you go</label>
-                    <input type="text" id="cf-2" placeholder="Your drop-off address" class="form-control">
-                  </div>
-                  <div class="form-group col-md-3">
-                    <label for="cf-3">Journey date</label>
-                    <input type="text" id="cf-3" placeholder="Your pickup address" class="form-control datepicker px-3">
-                  </div>
-                  <div class="form-group col-md-3">
-                    <label for="cf-4">Return date</label>
-                    <input type="text" id="cf-4" placeholder="Your pickup address" class="form-control datepicker px-3">
-                  </div>
+                <div class="col-md-6 text-md-right">
+                  <span class="text-primary">32</span> <span>cars available</span></span>
                 </div>
-                <div class="row">
-                  <div class="col-lg-6">
-                    <input type="submit" value="Submit" class="btn btn-primary">
-                  </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-md-3">
+                  <label for="cf-1">Where you from</label>
+                  <input type="text" id="cf-1" placeholder="Your pickup address" class="form-control">
                 </div>
-              </form>
-            </div>
+                <div class="form-group col-md-3">
+                  <label for="cf-2">Where you go</label>
+                  <input type="text" id="cf-2" placeholder="Your drop-off address" class="form-control">
+                </div>
+                <div class="form-group col-md-3">
+                  <label for="cf-3">Journey date</label>
+                  <input type="text" id="cf-3" placeholder="Your pickup address" class="form-control datepicker px-3">
+                </div>
+                <div class="form-group col-md-3">
+                  <label for="cf-4">Return date</label>
+                  <input type="text" id="cf-4" placeholder="Your pickup address" class="form-control datepicker px-3">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <input type="submit" value="Submit" class="btn btn-primary">
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
 
-    
+
 
     <div class="site-section bg-light">
       <div class="container">
         <div class="row">
           <div class="col-lg-3">
             <h3>Our Offer</h3>
-            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure nesciunt nemo vel earum maxime neque!</p>
+            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure nesciunt nemo vel earum
+              maxime neque!</p>
             <p>
               <a href="#" class="btn btn-primary custom-prev">Previous</a>
               <span class="mx-2">/</span>
@@ -154,24 +162,21 @@
           </div>
           <div class="col-lg-9">
 
-
-
-
             <div class="nonloop-block-13 owl-carousel">
               <div class="item-1">
 
                 <a href="#"><img src="{{ asset('carrent-master/images/img_1.jpg') }}" alt="Image" class="img-fluid"></a>
                 <div class="item-1-contents">
                   <div class="text-center">
-                  <h3><a href="#">Range Rover S64 Coupe</a></h3>
-                  <div class="rating">
-                    <span class="icon-star text-warning"></span>
-                    <span class="icon-star text-warning"></span>
-                    <span class="icon-star text-warning"></span>
-                    <span class="icon-star text-warning"></span>
-                    <span class="icon-star text-warning"></span>
-                  </div>
-                  <div class="rent-price"><span>$250/</span>day</div>
+                    <h3><a href="#">Range Rover S64 Coupe</a></h3>
+                    <div class="rating">
+                      <span class="icon-star text-warning"></span>
+                      <span class="icon-star text-warning"></span>
+                      <span class="icon-star text-warning"></span>
+                      <span class="icon-star text-warning"></span>
+                      <span class="icon-star text-warning"></span>
+                    </div>
+                    <div class="rent-price"><span>40,551 pesos /</span>day</div>
                   </div>
                   <ul class="specs">
                     <li>
@@ -192,7 +197,7 @@
                     </li>
                   </ul>
                   <div class="d-flex action">
-                    <a href="contact.html" class="btn btn-primary">Rent Now</a>
+                    <a href="{{route('contact')}}" class="btn btn-primary">Rent Now</a>
                   </div>
                 </div>
               </div>
@@ -202,15 +207,15 @@
                 <a href="#"><img src="{{ asset('carrent-master/images/img_2.jpg') }}" alt="Image" class="img-fluid"></a>
                 <div class="item-1-contents">
                   <div class="text-center">
-                  <h3><a href="#">Range Rover S64 Coupe</a></h3>
-                  <div class="rating">
-                    <span class="icon-star text-warning"></span>
-                    <span class="icon-star text-warning"></span>
-                    <span class="icon-star text-warning"></span>
-                    <span class="icon-star text-warning"></span>
-                    <span class="icon-star text-warning"></span>
-                  </div>
-                  <div class="rent-price"><span>$250/</span>day</div>
+                    <h3><a href="#">Range Rover S64 Coupe</a></h3>
+                    <div class="rating">
+                      <span class="icon-star text-warning"></span>
+                      <span class="icon-star text-warning"></span>
+                      <span class="icon-star text-warning"></span>
+                      <span class="icon-star text-warning"></span>
+                      <span class="icon-star text-warning"></span>
+                    </div>
+                    <div class="rent-price"><span>50,250 pesos /</span>day</div>
                   </div>
                   <ul class="specs">
                     <li>
@@ -231,19 +236,20 @@
                     </li>
                   </ul>
                   <div class="d-flex action">
-                    <a href="contact.html" class="btn btn-primary">Rent Now</a>
+                    <a href="{{ route('contact') }}" class="btn btn-primary">Rent Now</a>
                   </div>
                 </div>
               </div>
 
             </div>
-            
+
           </div>
         </div>
       </div>
     </div>
 
-    <div class="site-section section-3" style="background-image: url('{{ asset('carrent-master/images/hero_2.jpg') }}')">
+    <div id="service-section" class="site-section section-3"
+      style="background-image: url('{{ asset('carrent-master/images/hero_2.jpg') }}')">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center mb-5">
@@ -293,7 +299,8 @@
       <div class="row justify-content-center text-center">
         <div class="col-7 text-center mb-5">
           <h2>How it works</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo assumenda, dolorum necessitatibus eius earum voluptates sed!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo assumenda, dolorum necessitatibus eius earum
+            voluptates sed!</p>
         </div>
       </div>
       <div class="how-it-works d-flex">
@@ -320,21 +327,23 @@
 
       </div>
     </div>
-    
-    
+
+
     <div class="site-section bg-light">
       <div class="container">
         <div class="row justify-content-center text-center mb-5">
           <div class="col-7 text-center mb-5">
             <h2>Customer Testimony</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo assumenda, dolorum necessitatibus eius earum voluptates sed!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo assumenda, dolorum necessitatibus eius
+              earum voluptates sed!</p>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-4 mb-4 mb-lg-0">
             <div class="testimonial-2">
               <blockquote class="mb-4">
-                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"</p>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam.
+                  Ipsam, nam, voluptatum"</p>
               </blockquote>
               <div class="d-flex v-card align-items-center">
                 <img src="{{ asset('carrent-master/images/person_1.jpg') }}" alt="Image" class="img-fluid mr-3">
@@ -345,7 +354,8 @@
           <div class="col-lg-4 mb-4 mb-lg-0">
             <div class="testimonial-2">
               <blockquote class="mb-4">
-                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"</p>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam.
+                  Ipsam, nam, voluptatum"</p>
               </blockquote>
               <div class="d-flex v-card align-items-center">
                 <img src="{{ asset('carrent-master/images/person_2.jpg') }}" alt="Image" class="img-fluid mr-3">
@@ -356,7 +366,8 @@
           <div class="col-lg-4 mb-4 mb-lg-0">
             <div class="testimonial-2">
               <blockquote class="mb-4">
-                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"</p>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam.
+                  Ipsam, nam, voluptatum"</p>
               </blockquote>
               <div class="d-flex v-card align-items-center">
                 <img src="{{ asset('carrent-master/images/person_3.jpg') }}" alt="Image" class="img-fluid mr-3">
@@ -369,12 +380,13 @@
     </div>
 
 
-    <div class="site-section bg-white">
+    <div id="blog-section" class="site-section bg-white">
       <div class="container">
         <div class="row justify-content-center text-center mb-5">
           <div class="col-7 text-center mb-5">
             <h2>Our Blog</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo assumenda, dolorum necessitatibus eius earum voluptates sed!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo assumenda, dolorum necessitatibus eius
+              earum voluptates sed!</p>
           </div>
         </div>
 
@@ -382,28 +394,30 @@
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="post-entry-1 h-100">
               <a href="single.html">
-                <img src="{{ asset('carrent-master/images/post_1.jpg') }}" alt="Image"
-                 class="img-fluid">
+                <img src="{{ asset('carrent-master/images/post_1.jpg') }}" alt="Image" class="img-fluid">
               </a>
               <div class="post-entry-1-contents">
-                
+
                 <h2><a href="single.html">The best car rent in the entire planet</a></h2>
-                <span class="meta d-inline-block mb-3">July 17, 2019 <span class="mx-2">by</span> <a href="#">Admin</a></span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eos soluta, dolore harum molestias consectetur.</p>
+                <span class="meta d-inline-block mb-3">July 17, 2019 <span class="mx-2">by</span> <a
+                    href="#">Admin</a></span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eos soluta, dolore harum molestias
+                  consectetur.</p>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="post-entry-1 h-100">
               <a href="single.html">
-                <img src="{{ asset('carrent-master/images/img_2.jpg') }}" alt="Image"
-                 class="img-fluid">
+                <img src="{{ asset('carrent-master/images/img_2.jpg') }}" alt="Image" class="img-fluid">
               </a>
               <div class="post-entry-1-contents">
-                
+
                 <h2><a href="single.html">The best car rent in the entire planet</a></h2>
-                <span class="meta d-inline-block mb-3">July 17, 2019 <span class="mx-2">by</span> <a href="#">Admin</a></span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eos soluta, dolore harum molestias consectetur.</p>
+                <span class="meta d-inline-block mb-3">July 17, 2019 <span class="mx-2">by</span> <a
+                    href="#">Admin</a></span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eos soluta, dolore harum molestias
+                  consectetur.</p>
               </div>
             </div>
           </div>
@@ -411,14 +425,15 @@
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="post-entry-1 h-100">
               <a href="single.html">
-                <img src="{{ asset('carrent-master/images/img_3.jpg') }}" alt="Image"
-                 class="img-fluid">
+                <img src="{{ asset('carrent-master/images/img_3.jpg') }}" alt="Image" class="img-fluid">
               </a>
               <div class="post-entry-1-contents">
-                
+
                 <h2><a href="single.html">The best car rent in the entire planet</a></h2>
-                <span class="meta d-inline-block mb-3">July 17, 2019 <span class="mx-2">by</span> <a href="#">Admin</a></span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eos soluta, dolore harum molestias consectetur.</p>
+                <span class="meta d-inline-block mb-3">July 17, 2019 <span class="mx-2">by</span> <a
+                    href="#">Admin</a></span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eos soluta, dolore harum molestias
+                  consectetur.</p>
               </div>
             </div>
           </div>
@@ -426,14 +441,15 @@
       </div>
     </div>
 
-    
+
 
     <footer class="site-footer">
       <div class="container">
         <div class="row">
           <div class="col-lg-3">
             <h2 class="footer-heading mb-4">About Us</h2>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+              blind texts. </p>
           </div>
           <div class="col-lg-8 ml-auto">
             <div class="row">
@@ -484,10 +500,13 @@
           <div class="col-md-12">
             <div class="border-top pt-5">
               <p>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            </p>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy;
+                <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made
+                with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com"
+                  target="_blank">Colorlib</a>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              </p>
             </div>
           </div>
 
@@ -495,11 +514,10 @@
       </div>
     </footer>
 
-    </div>
+  </div>
 
-    @include('scripts');
+  @include('scripts');
 
-  </body>
+</body>
 
 </html>
-

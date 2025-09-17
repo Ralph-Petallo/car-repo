@@ -14,19 +14,7 @@ class AdminController extends Controller
         return view("cars");
     }
 
-    public function service(){
-        return view("services");
-    }
-
-    public function abouts(){
-        return view("about");
-    }
-
     public function contacts(){
         return view("contact");
-    }
-
-    public function blogs(){    
-        return view("blog");
     }
 }

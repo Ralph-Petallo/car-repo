@@ -17,8 +17,6 @@
         <div class="site-mobile-menu-body"></div>
       </div>
 
-
-
       <header class="site-navbar site-navbar-target" role="banner">
 
         <div class="container">
@@ -26,25 +24,24 @@
 
             <div class="col-3 ">
               <div class="site-logo">
-                <a href="index.html">CarRent</a>
+                <a href="{{ route('cars') }}">CarRent</a>
               </div>
             </div>
 
             <div class="col-9  text-right">
               
 
-              <span class="d-inline-block d-lg-none"><a href="#" class="text-white" site-menu-toggle js-menu-toggle py-5 text-white"><span class="icon-menu h3 text-white"></span></a></span>
-
-              
+              <span class="d-inline-block d-lg-none"><a href="#" class="text-white" site-menu-toggle js-menu-toggle py-5 text-white><span class="icon-menu h3 text-white"></span></a></span>
 
               <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
                 <ul class="site-menu main-menu js-clone-nav ml-auto ">
                   <li><a href="{{ route('index') }}" class="nav-link">Home</a></li>
                   <li><a href="{{ route('services') }}" class="nav-link">Services</a></li>
                   <li class="active"><a href="#" class="nav-link">Cars</a></li>
-                  <li><a href="{{ route('about') }}" class="nav-link">About</a></li>
-                  <li><a href="{{ route('blog') }}" class="nav-link">Blog</a></li>
                   <li><a href="{{ route('contact') }}" class="nav-link">Contact</a></li>
+                  <li><button type="button" class="btn text-white bg-primary" data-toggle="modal" data-target="#myModal">
+                  Log In
+                </button></li>
                 </ul>
               </nav>
             </div>
@@ -53,6 +50,32 @@
           </div>
         </div>
 
+        <!-- Modal -->
+      <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Login Account</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+            </div>
+            <div class="modal-body">
+              <form action="/" method="get">
+                <input type="text" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button class="button">Login</button>
+              </form>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
       </header>
 
     <div class="ftco-blocks-cover-1">

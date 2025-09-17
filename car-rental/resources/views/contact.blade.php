@@ -42,9 +42,10 @@
                   <li><a href="{{ route('index') }}" class="nav-link">Home</a></li>
                   <li><a href="{{ route('services') }}" class="nav-link">Services</a></li>
                   <li><a href="{{route('cars')}}" class="nav-link">Cars</a></li>
-                  <li><a href="{{route('about')}}" class="nav-link">About</a></li>
-                  <li><a href="{{ route('blog') }}" class="nav-link">Blog</a></li>
                   <li class="active"><a href="contact.html" class="nav-link">Contact</a></li>
+                  <li><button type="button" class="btn text-white bg-primary" data-toggle="modal" data-target="#myModal">
+                  Log In
+                </button></li>
                 </ul>
               </nav>
             </div>
@@ -52,6 +53,33 @@
             
           </div>
         </div>
+        
+        <!-- Modal -->
+      <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Login Account</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+            </div>
+            <div class="modal-body">
+              <form action="/" method="get">
+                <input type="text" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button class="button">Login</button>
+              </form>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
 
       </header>
 
